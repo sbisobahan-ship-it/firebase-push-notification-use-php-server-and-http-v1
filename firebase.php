@@ -1,13 +1,15 @@
 <?php
 
-$token = 'f_sx0x0bS5-XtCD9RK3Uw2:APA91bG8OEh43rDYVhmlj4rAfVN_qeRHmUtkgU87GUPMuVYOBWkMH51-Nolferrvzy11mYLg9MoZs1-6XPaN5jIYPiuYxim9j_FBGWhLq3-4Gq8YkXoOEKc';
-$title = "কি খবর তোমাদের?";
-$body = "ভালো আছি ভালো থেকো, আকাশের ঠিকানায় চিঠি লিখো........";
+$token = 'FCM  টোকেন ( যা পাওয়া যাবে এন্ডোয়েড প্রজেক্ট এ ফাইয়ার বেজ এড করে নিয়ে টেস্ট হিসাবে লগক্যাট থেকে দেখা যায় (চ্যাট জিপিটিকে বলবে =  আমাকে FCM  টোকেন বের করার কোড করে দাও তা নিয়ে প্রজেক্ট রান করলে লগক্যাট এ পাওয়া যাবে ))';
+$title = "পুশ নটিফিকেশন এর টাইটেল ";
+$body = "পুশ নটিফিকেশন মেসেজ ";
 
 // Include the get-access-token.php
+// এখানে এই একই ফোল্ডারে get-access-token.php নামে এই ফাইলটি রাখতে হবে ( যা এই রিপোজিটোরিতে পোস্ট করা আছে )
 require 'get-access-token.php';
 
 // Path to your service account key file
+// এটাও এই একই ফোল্ডারে রাখতে হবে এবং এটা পাওয়া যাবে ( ফাইয়ারবেজ প্রজেক্ট থেকে - Project settings - থেকে -Service acounts থেকে Genaret new privet key তে ক্লিক করলে একটি ফাইল ডাউনলোড হবে সেটাকে রি নেম করে এখানে ওই নাম অনুযায়ী দিতে হবে
 $serviceAccountKeyFile = 'service-account-file.json';
 
 // Obtain the OAuth 2.0 Bearer Token
